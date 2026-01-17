@@ -3,9 +3,11 @@
     <title>My cars</title>
   </head>
 
-  <body>
-    <h1>Cars project</h1>
+  {% block content %}
 
-    <p>To learn the Django framework</p>
+  <body>
+    Carro 1: {{ cars.model }}
   </body>
+
+  {% endblock %}
 </html>
