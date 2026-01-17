@@ -3,7 +3,7 @@ from cars.models import Car, Brand
 
 
 class CarAdmin(admin.ModelAdmin):
-    list_display = ("model", "brand", "model_year", "value")
+    list_display = ("model", "brand", "model_year", "value", "photo")
     search_fields = ("model", "brand", "model_year")
 
 
