@@ -1,1 +1,9 @@
-Register page
+{% extends "base.html" %} {% block content %}
+
+<form method="post">
+  {% csrf_token %} {{ user_form.as_p }}
+
+  <input type="submit" value="Register" />
+</form>
+
+{% endblock %}
