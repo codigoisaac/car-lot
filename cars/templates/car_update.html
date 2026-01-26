@@ -110,18 +110,18 @@
     text-decoration: none !important;
   }
 </style>
-
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
   <h1>Editar Carro</h1>
-
   <table>
     {{ form.as_table }}
   </table>
-
   <div>
     <div class="buttons-container">
       <input type="submit" value="Salvar Alterações" class="btn btn-primary" />
+      <a href="{% url 'car_delete' pk=object.pk %}" class="btn btn-danger"
+        >Deletar Carro</a
+      >
       <a href="{% url 'cars' %}" class="btn btn-secondary">Cancelar</a>
     </div>
   </div>
