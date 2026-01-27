@@ -31,6 +31,8 @@ class CarInventory(models.Model):
 
     class Meta:
         ordering = ["-created_at"]
+        verbose_name = "Car Inventory"
+        verbose_name_plural = "Car Inventory"
 
     def __str__(self):
         return f"{self.cars_count} - {self.cars_value}"
